@@ -1,0 +1,16 @@
+ proxies:
+    - name: "代理"
+      type: socks5
+      server: 199.239.13.146
+      port: 443
+      username: BLXGHGfGRFWJ
+      password: L32eyPucda
+
+  proxy-groups:
+    - name: "代理选择"
+      type: select
+      proxies:
+        - "代理"
+
+  rules:
+    - MATCH,代理选择
